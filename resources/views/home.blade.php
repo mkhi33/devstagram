@@ -3,6 +3,8 @@
     Página principal
 @endsection
 @section('content')
-    Desde página principal
+    <x-post-list :posts="$posts"/>
+    
+
 @endsection
 
