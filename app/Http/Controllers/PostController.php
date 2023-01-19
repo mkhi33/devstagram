@@ -53,6 +53,7 @@ class PostController extends Controller
             'title' => $request->title,
             'description' => $request->description,
             'image' => $request->image,
+            'user_id' => auth()->user()->id
         ]);
 
         return redirect()->route('posts.index', auth()->user()->username);

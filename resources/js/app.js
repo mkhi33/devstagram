@@ -22,11 +22,11 @@ const dropzone = new Dropzone("#dropzone", {
             
         }
     }
+    
 })
 
 
 dropzone.on('success', function(file, response) {
-
     document.querySelector('[name="image"]').value = response.image;
 })
 
